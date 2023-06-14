@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <title>Pushkar raj</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="text.js"></script>
+    <link rel="icon" type="image/x-icon" href="Screenshot 2023-06-14 204535.png">
+</head>
+<body>
+    <header>
+        <a class="logo" onclick="showhome()">Pushkar Raj</a>
+
+        <nav class="navbar">
+            <a href="#" id="home-button" class="home-button active" onclick="showhome()">Home</a>
+            <a href="#" id="about-button" class="about-button " onclick="showabout()">About</a>
+            <a href="#" id="skills-button" class="skills-button" onclick="showskills()">Skills</a>
+            <a href="#" id="cv-button" class="cv-button" onclick="showcv()" >CV</a>
+            <a href="#" id="contact-button" class="contact-button" onclick="showcontact()">Contact</a>
+
+        </nav>
+    </header>
+
+    <section class="landing">
+        
+        <div class="home-content" id="home">
+            <h1>HI , I'm Pushkar Raj</h1>
+            <h3>Web Developer</h3><br>
+            <p>Mathematics & Computing || RGIPT 22-26 || Web Developer || Technical Executive e-cell RGIPT ||Technical & Photography Executive Fipi rgipt</p><br>
+            <a href="#" class="btn" id="hire-me-button" onclick="showhireme()">Hire Me</a>
+        </div>
+        <div id="hire_me" class="hire_me" style="display: none;">
+            <form id="contact_form" action="mailto:pushkarraj785@gmail.com" >
+                <div class="row">
+                  <label class="required" for="name">Your name:</label><br />
+                  <input id="name" class="input" name="name" type="text" value="" size="50" /><br />
+                  <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                  <label class="required" for="email">Your email:</label><br />
+                  <input id="email" class="input" name="email" type="text" value="" size="50" /><br />
+                  <span id="email_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                  <label class="required" for="message">About Your Project:</label><br />
+                  <textarea id="message" class="input" name="message" rows="7" cols="50"></textarea><br />
+                  <span id="message_validation" class="error_message"></span>
+                </div>
+                  
+                  
+                  <button id="submit_button">Send email</button>
+              </form>
+        </div>
+        <div class="about" id="about" style="display: none;">
+            <h1>About Me</h1>
+            <p>I'm  <span>  < PUSHKAR RAJ >  </span>  a student of RGIPT's Mathematics and Computing branch, with a focus on web development, data structures, algorithms, and photography. My passion lies in creating visually appealing websites, optimizing algorithms, and capturing the beauty of the world through my camera lens.</p>
+        </div>
+        <div class="skills" id="skills" style="display: none;">
+            <h1>My Skills</h1>
+            <table>
+                <tr>
+                  <td>HTML</td>
+                  <td>✅</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>JAVASCRIPT</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>C++ BASICS</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>PYTHON</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>C PROGRAMING LANGUAGE</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>MERN STACK</td>
+                    <td>█████▒▒▒▒▒</td>
+                </tr>
+                <tr>
+                    <td>DSA</td>
+                    <td>███▒▒▒▒▒▒▒</td>
+                </tr>
+              </table>
+        </div>
+        <div class="cv" id="cv" style="display: none;">
+            <button type="submit" onclick="window.open('CV.pdf')">Download My CV !</button>
+        </div>
+        <div id="contact" class="contact" style="display: none;">
+            <form id="contact_form" action="mailto:pushkarraj785@gmail.com" >
+                <div class="row">
+                  <label class="required" for="name">Your name:</label><br />
+                  <input id="name" class="input" name="name" type="text" value="" size="50" /><br />
+                  <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                  <label class="required" for="email">Your email:</label><br />
+                  <input id="email" class="input" name="email" type="text" value="" size="50" /><br />
+                  <span id="email_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                  <label class="required" for="message">Your message:</label><br />
+                  <textarea id="message" class="input" name="message" rows="7" cols="50"></textarea><br />
+                  <span id="message_validation" class="error_message"></span>
+                </div>
+                  
+                  
+                  <button id="submit_button">Send email</button>
+              </form>
+        </div>
+        <div class="image">
+            <div class="circle">
+                <span></span>
+                <span></span>
+                <div class="pic">
+                    <img src="image/portfolio-pic.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+
+        
+    </section>
+    <div class="social">
+        <a href="https://www.instagram.com/laugh_loud.jpg/" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://github.com/pushkarraj785"><i class='bx bxl-github' ></i></a>
+        <a href="https://www.linkedin.com/in/pushkar-raj-971b62202/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+        
+    </div>
+
+    
+    
+</body>
+</html>
